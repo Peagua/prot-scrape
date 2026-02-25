@@ -235,7 +235,7 @@ while verificador == True:
         print('Resposta inválida. Tente novamente.')
 
 
-# Próprio para minha pesquisa, contendo o endereço inicial de cada arquivo utilizado
+# Próprio para minha pesquisa, contendo o identificador de cada arquivo utilizado
 lista_comps = ['TJL_S','DDS_I','DDS_S','RMS_I','RMS_S']
 
 for i in range(len(lista_comps)):
