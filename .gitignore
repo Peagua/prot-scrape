@@ -1,0 +1,14 @@
+venv/
+
+fastas_ref/DDS*
+fastas_ref/RMS*
+fastas_ref/TJL*
+
+proteinas_triagem/DDS/
+proteinas_triagem/RMS/
+proteinas_triagem/TJL/
+proteinas_triagem/links_pubchem.tsv
+
+relatorios_busca/DDS*
+relatorios_busca/TJL*
+relatorios_busca/RMS*
