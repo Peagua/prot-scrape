@@ -18,12 +18,18 @@ A partir dai, é só executar o script, alterando a lista de compostos com os no
 
 ### BLAST com proteoma de Leishmania
 Após obter os fastas das referêncais, parte-se para o BLAST em proteoma de Leishmania amazonensis, com o objetivo de extrair os ortólogos em Leishmania.
+
 O repositório já possui o fasta do proteoma, e o database indexado. Entretanto, se não houver, deve-se realizar essa etapa (Baixar o fasta com o proteoma anotado, e indexação, seguindo instruções dentro do script do blast).
-Em seguida, basta rodar o script [blast_script.sh](blast_script.sh), que então todo o processo será realizado, com os outputs em "blast_results", no formato .tsv
+
+Em seguida, basta rodar o script [blast_script.sh](blast_script.sh), que então todo o processo será realizado, com os outputs em "blast_results", no formato .tsv.
+
 **IMPORTANTE:** Eu criei esse script utilizando um ambiente virtual com a ferramenta do blast instalado, utilizando o mamba e miniconda3. Então é recomendado fazer o mesmo (ou alterar o script né). 
 
 ### Filtrando os resultados do BLAST
 Com os resultados do blast em mãos, é necessário filtrar os melhores hits.
+
 Os filtros que utilizei foram: Identidade >= 30%; Cobertura de alinhamento >= 70%; E-value <= 1.10^-5.
-O script que realiza esta ação é o arquivoi [filtrar_blast.py](filtrar_blast.py)
+
+O script que realiza esta ação é o arquivoi [filtrar_blast.py](filtrar_blast.py).
+
 Após aplicar os filtros, os melhores hits ÚNICOS são extraidos, e aramzenados em arquivos .csv no diretório blast_filtrado.
