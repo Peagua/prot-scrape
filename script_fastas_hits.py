@@ -45,7 +45,6 @@ for arquivo in arquivos_csv:
     # Listas importantes
     sequencias_extraidas = []
     nao_encontradas = []
-    resultados_alphafold = []
 
     # Loop para cada linha (proteína) em cada arquivo
     for _, row in df.iterrows():

@@ -39,4 +39,7 @@ Tendo as IDs dos hits, nos arquivos .csv, o próximo passo é rodar o [script_fa
 
 Este script realiza a busca dos IDs de cada hit dentro do proteoma, no formato FASTA, de Leishmania amazonensis, contido na pasta [proteoma_leish](proteoma_leish/). O script retorna um arquivo .fasta para cada arquivo .csv filtrado do BLAST.
 
-Em seguida, deve-se seguir para a seleção das proteínas para a próxima etapa, de modelagem e docking.
+Além disso, o repositório contém o script [triagem_blast](triagem_blast.py), que irá retornar (de acordo com um score próprio que leva em consideração identidade>cobertura>bitscore) as X melhores proteínas (a depender do usuário). Este script retorna os fastas com as melhores proteínas para cada composto.
+
+Em seguida, deve-se seguir para as próximas etapas, de modelagem e docking.
+
